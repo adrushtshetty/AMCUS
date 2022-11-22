@@ -35,6 +35,11 @@ def covidUI():
 def afccUI():
     return render_template("AlergyColdCovid.html")
 
+# @app.route('/stats1')
+# def afccUI():
+#     return render_template("AlergyColdCovid.html")
+
+
 
 @app.route('/diabetes')
 def diabetesUI():
