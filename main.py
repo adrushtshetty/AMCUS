@@ -10,6 +10,9 @@ model1=pickle.load(open('AlergyColdCovidReduced.pkl','rb'))
 model2=pickle.load(open('diabetes.pkl','rb'))
 model3=pickle.load(open("CVD.pkl",'rb'))
 model4=pickle.load(open('Comprehensive.pkl','rb'))
+from datetime import date
+today = date.today()
+today1=str(today)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,7 +26,7 @@ logging.basicConfig(
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index.html",current_date='{}'.format(today1))
 
 
 @app.route("/covid19")
@@ -68,7 +71,7 @@ def about():
 
 @app.route('/book')
 def bookUI():
-    return render_template("appoinment.html")
+    return render_template("appoinment.html",current_date='{}'.format(today1))
 
 @app.route('/query')
 def queryUI():
