@@ -167,8 +167,7 @@ def book():
 
     email_sender = "drdev.maill@gmail.com"
     email_password = "mmieeonadmnrylqz"
-    email_receiver = ["adrushtshetty@gmail.com", "nithishg2005@gmail.com", "pikaa1024@gmail.com",
-                      "doctor.dev.ml@gmail.com"]
+    email_receiver = ["adrushtshetty@gmail.com", "noelgjose05@gmail.com", "doctor.dev.ml@gmail.com"]
     subject = "Appointment on " + Date + ". Slot: " + Slot + " Dept: " + Dept
     body = """
             {pName} needs an appointment in the {pdept} department, 
